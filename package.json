@@ -1,0 +1,19 @@
+{
+  "name": "acx-livechat-widget-embed-demo",
+  "version": "1.0.0",
+  "description": "Demo for acx livechat widget embed",
+  "source": "src/index.js",
+  "main": "dist/acx-livechat-widget.js",
+  "bin": "dist/acx-livechat-widget.js",
+  "scripts": {
+    "start": "parcel serve --open --host 4040 --no-cache --no-source-maps --no-autoinstall",
+    "watch": "parcel watch --no-source-maps --no-cache",
+    "build:lib": "parcel build --no-source-maps --no-cache",
+    "dev": "concurrently --kill-others-on-fail \"yarn run watch\" \"yarn start\""
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "parcel": "^2.0.0-rc.0",
+    "concurrently": "^6.2.1"
+  }
+}
